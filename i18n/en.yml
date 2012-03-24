@@ -1,0 +1,9 @@
+en:
+  grow_button: Grow! Button
+  grow_button_updated: Update.
+  grow_button_type: Button
+  grow_button_type_square: Vertical count
+  grow_button_type_rectangle: Horizontal
+  grow_button_api_key: API key
+  grow_button_api_key_url: 'http://growbutton.com/setting#!get_button'
+  grow_button_api_key_url_text: 'You can generate the API key for this site at here.'

@@ -1,0 +1,17 @@
+%h2= t.grow_button
+%form{:action => '/admin/plugins/grow_button', :method => 'post'}
+  %input{:type => 'hidden', :name => '_method', :value => 'put'}
+  .field
+    %label{:for => 'grow_button_type'}= t.grow_button_type
+    %br 
+    %input{:type => 'radio', :id => 'grow_button_type_square', :name => 'grow_button_type', :value => 'grow_button_type_square', :checked => Option.grow_button_type == 'grow_button_type_square'}
+    %label{:for => 'grow_button_type_square'}= t.grow_button_type_square
+    %input{:type => 'radio', :id => 'grow_button_type_rectangle', :name => 'grow_button_type', :value => 'grow_button_type_rectangle', :checked => Option.grow_button_type == 'grow_button_type_rectangle'}
+    %label{:for => 'grow_button_type_rectangle'}= t.grow_button_type_rectangle
+  .field
+    %label{:for => 'grow_button_api_key'}= t.grow_button_api_key
+    %a{:href => t.grow_button_api_key_url}= t.grow_button_api_key_url_text
+    %br
+    %input{:type => 'text', :id => 'grow_button_api_key', :name => 'grow_button_api_key', :value => Option.grow_button_api_key}
+  .field
+    %input{:type => 'submit', :value => t.edit}
