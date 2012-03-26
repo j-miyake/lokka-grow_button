@@ -7,9 +7,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title></title>
+	<title>Lokka Grow! Button - johnny-miyake's github page</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+
+  <meta property="og:title" content="Lokka Grow! Button - johnny-miyake's github page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://johnny-miyake.github.com/lokka-grow_button/" />
+  <meta property="og:image" content="img/lokka-grow_button.ss.png" />
+  <meta property="og:description" content='This is a plugin to add "Grow! Button" to Lokka site.' />
 
 	<meta name="viewport" content="width=device-width">
 
@@ -35,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">lokka-grow_button</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="#about">Profile</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -48,17 +54,40 @@
     </div>
 
     <div class="container">
-
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>lokka-grow_button</h1>
+        <h1>Lokka Grow! Button</h1>
         <p>This is a plugin to add "Grow! Button" to Lokka site.</p>
-        <p><a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/lokka-grow_button">repo &raquo;</a></p>
+        <p>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/lokka-grow_button">Repo &raquo;</a>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/lokka-grow_button/zipball/master">Zip &raquo;</a>
+          <a class="btn btn-primary btn-large" href="https://github.com/johnny-miyake/lokka-grow_button/tarball/master">Tar &raquo;</a>
+        </p>
+        <div id="description">
+          <h2>Installation &amp; Usage</h2>
+          <div id="left">
+            <div class="installation">
+              <p>1. Download the project from the links above (Zip or Tar).</p>
+              <p>2. Expand the downloaded project then put it in the plugin directory.</p>
+              <p>3. Insert the helper code <code>&lt;%= grow_button %&gt;</code> into your template.</p>
+            </div>
+            <div class="social-buttions">
+              <script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=e05fafe0-5952-012f-0669-12313f00aced&shape=square"></script>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="johnny_miyake" data-count="vertical" data-lang="ja">ツイート</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+          </div>
+          <div id="right">
+            <img src="img/lokka-grow_button.ss.png" alt="lokka-grow_button screen shot"/>
+          </div>
+        </div>
+        <div class="clear">&nbsp;</div>
       </div>
       <hr>
 
+
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; johnny-miyake 2012</p>
       </footer>
 
     </div> <!-- /container -->
