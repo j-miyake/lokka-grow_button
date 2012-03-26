@@ -1,9 +1,9 @@
 ja:
   grow_button: Grow!ボタン
   grow_button_updated: 更新しました。
-  grow_button_type: ボタン
-  grow_button_type_square: 垂直方向にカウント数を表示
-  grow_button_type_rectangle: 水平方向にカウント数を表示
+  grow_button_type: ボタンの形状
+  grow_button_type_square: 正方形
+  grow_button_type_rectangle: 長方形
   grow_button_api_key: APIキー
   grow_button_api_key_url: 'http://growbutton.com/setting#!get_button'
   grow_button_api_key_url_text: 'こちらから取得できます'

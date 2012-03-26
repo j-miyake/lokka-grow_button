@@ -5,7 +5,7 @@ module Lokka
   module GrowButton
     def self.registered(app)
       app.get '/admin/plugins/grow_button' do
-        haml :"plugin/lokka-grow_button/views/index", :layout => :"admin/layout"
+        haml:"plugin/lokka-grow_button/views/index", :layout => :"admin/layout"
       end 
 
       app.put '/admin/plugins/grow_button' do
