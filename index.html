@@ -31,6 +31,16 @@
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=218241258233694";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     <div class="navbar navbar-fixed-top">
@@ -72,9 +82,13 @@
               <p>3. Insert the helper code <code>&lt;%= grow_button %&gt;</code> into your template.</p>
             </div>
             <div class="social-buttions">
-              <script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=e05fafe0-5952-012f-0669-12313f00aced&shape=square"></script>
-              <a href="https://twitter.com/share" class="twitter-share-button" data-via="johnny_miyake" data-count="vertical" data-lang="ja">ツイート</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <div class="social-button"><a href="https://twitter.com/share" class="twitter-share-button" data-via="johnny_miyake" data-count="vertical" data-lang="ja">ツイート</a></div>
+              <div class="social-button"><div class="fb-like" data-href="http://johnny-miyake.github.com/lokka-grow_button/" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div></div>
+              <div class="social-button">
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=e05fafe0-5952-012f-0669-12313f00aced&shape=square"></script>
+              </div>
+              <div class="clear">&nbsp;</div>
             </div>
           </div>
           <div id="right">
