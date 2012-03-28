@@ -1,13 +1,15 @@
 Lokka Grow! Button
 ============================
 
-[Grow!ボタン]（ http://blog.growbutton.com/tutorial/ ）を作成する[Lokka]（ http://lokka.org ）用のプラグインです。
+[Grow!ボタン](http://blog.growbutton.com/tutorial/)を作成する[Lokka](http://lokka.org)用のプラグインです。
 
 インストール方法
 --------------
 
     $ cd public/plugin
     $ git clone git://github.com/johnny-miyake/lokka-grow_button.git
+    $ cd lokka-grow_button
+    $ rm -rf .git
 
 使用方法
 ------

@@ -10,6 +10,8 @@ Run following commands:
 
     $ cd public/plugin
     $ git clone git://github.com/johnny-miyake/lokka-grow_button.git
+    $ cd lokka-grow_button
+    $ rm -rf .git
 
 Usage
 -----
