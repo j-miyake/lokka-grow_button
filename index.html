@@ -22,6 +22,12 @@
   <link href='http://fonts.googleapis.com/css?family=Antic+Didone' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="/less/subpages_style.less">
 	<script src="js/libs/less-1.2.1.min.js"></script>
+  <script src="js/libs/jquery.biggerlink.min.js"></script>
+  <script type="text/javascript">  
+      $(function(){  
+          $('#badge-inner div').biggerlink();  
+      });  
+  </script>  
 	
 	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
 	to style.css, and replace the 2 lines above by this one:
@@ -103,10 +109,10 @@
       </div>
       <hr>
 
-      <div>
-        <div class="badge-outer">
-          <div class="badge-inner">
-            <div class="badge-text">Fork me</div>
+      <div class="badge-outer">
+        <div class="badge-inner">
+          <div class="badge-text">
+            <a href="https://github.com/johnny-miyake/lokka-grow_button">Fork me</a>
           </div>
         </div>
       </div>
