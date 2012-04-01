@@ -1,7 +1,4 @@
 module Lokka
-  GROW_BUTTON_TYPE_RECTANGLE = 'grow_button_type_rectangle'
-  GROW_BUTTON_TYPE_SQUARE    = 'grow_button_type_square'
-
   module GrowButton
     def self.registered(app)
       app.get '/admin/plugins/grow_button' do
@@ -15,20 +12,26 @@ module Lokka
         flash[:notice] = t.grow_button_updated
         redirect '/admin/plugins/grow_button'
       end 
+
+      app.before do
+        content_for :footer do
+          %Q(<script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=#{Option.grow_button_api_key}&insert=false"></script>)
+        end
+      end
     end 
   end
 
   module Helpers
-    def grow_button
+    def grow_button(entry = nil)
       if Option.grow_button_api_key
-        case Option.grow_button_type
-        when GROW_BUTTON_TYPE_RECTANGLE
-          %Q(<script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=#{Option.grow_button_api_key}&shape=rectangle"></script>)
-        when GROW_BUTTON_TYPE_SQUARE
-          %Q(<script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=#{Option.grow_button_api_key}&shape=square"></script>)
+        if entry
+          url = "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}#{request.env['SCRIPT_NAME']}#{entry.link}"
+          %Q(<span itemscope="" itemref="#{Option.grow_button_type}" itemtype="http://growbutton.com/ns#button">
+               <span itemprop="url">#{url}</span>
+               <span itemprop="title">#{entry.title}</span>
+             </span>)
         else
-          raise "unknown GB_TYPE"
-          %Q(<script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=#{api_key}&shape=rectangle"></script>)
+          %Q(<script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=#{Option.grow_button_api_key}&shape=#{Option.grow_button_type}"></script>)
         end
       end
     end

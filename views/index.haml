@@ -3,10 +3,10 @@
   %label{:for => 'grow_button_type'}= t.grow_button_type
   %input{:type => 'hidden', :name => '_method', :value => 'put'}
   .field
-    %input{:type => 'radio', :id => 'grow_button_type_square', :name => 'grow_button_type', :value => 'grow_button_type_square', :checked => Option.grow_button_type == 'grow_button_type_square'}
+    %input{:type => 'radio', :id => 'grow_button_type_square', :name => 'grow_button_type', :value => 'square', :checked => Option.grow_button_type == 'square'}
     %img{:src => 'http://johnny-miyake.github.com/lokka-grow_button/img/button_square.png'}
   .field
-    %input{:type => 'radio', :id => 'grow_button_type_rectangle', :name => 'grow_button_type', :value => 'grow_button_type_rectangle', :checked => Option.grow_button_type == 'grow_button_type_rectangle'}
+    %input{:type => 'radio', :id => 'grow_button_type_rectangle', :name => 'grow_button_type', :value => 'rectangle', :checked => Option.grow_button_type == 'rectangle'}
     %img{:src => 'http://johnny-miyake.github.com/lokka-grow_button/img/button_rectangle.png'}
   .field
     %label{:for => 'grow_button_api_key'}= t.grow_button_api_key
